@@ -96,17 +96,21 @@ def end(winner=False):
     global limbs
     lostTxt = 'You Lost, press any key to play again...'
     winTxt = 'WINNER!, press any key to play again...'
+    
     redraw_game_window()
-    pygame.time.delay(1000)
-    win.fill( RED)
+    pygame.time.delay(500)
+    
 
     if winner == True:
         label = lost_font.render(winTxt, 1, BLACK)
+        win.fill(GREEN) 
+        wordTxt = lost_font.render(word.upper(), 1, BLACK)
+        wordWas = lost_font.render('The word was: ', 1, BLACK)
     else:
-        label = lost_font.render(lostTxt, 1, BLACK)
-
-    wordTxt = lost_font.render(word.upper(), 1, BLACK)
-    wordWas = lost_font.render('The word was: ', 1, BLACK)
+        label = lost_font.render(lostTxt, 1, WHITE)
+        win.fill(RED)
+        wordTxt = lost_font.render(word.upper(), 1, WHITE)
+        wordWas = lost_font.render('The word was: ', 1, WHITE)
 
     win.blit(wordTxt, (winWidth/2 - wordTxt.get_width()/2, 295))
     win.blit(wordWas, (winWidth/2 - wordWas.get_width()/2, 245))
@@ -164,7 +168,7 @@ while inPlay:
                 guessed.append(chr(letter))
                 buttons[letter - 65][4] = False
                 if hang(chr(letter)):
-                    if limbs != 5:
+                    if limbs != 6:
                         limbs += 1
                     else:
                         end()

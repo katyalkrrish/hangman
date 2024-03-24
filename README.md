@@ -14,8 +14,8 @@ Once hangman is complete you will lose
 
 # Additional feautres
 Screen will turn green when you guessed the answer correctly 
-and turn red when you have used all tries to guess the word.
-You will be provided with the hint too.
+and turn red when you have used all tries to guess the word.<br>
+You will be provided with the hint too.<br>
 Alphabets will be on the screen you just have to click them 
 and when you have clicked alphabet once it won't be shown to you again until the next game.
 
@@ -23,5 +23,7 @@ and when you have clicked alphabet once it won't be shown to you again until the
 
 # Requirements
 - Python 
+- random
 - pygame
+
 

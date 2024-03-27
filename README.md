@@ -1,8 +1,8 @@
 # Made By 
-# 1. krrish kaytal 
-# 2. kanish mahajan
-# 3. krish singla
-# 4. harsh
+# 1. krrish kaytal (Product Manager)
+# 2. kanish mahajan (Tester)
+# 3. krish singla (Developer)
+# 4. harsh (Developer)
 
 # Hangman-Python
 A simple hangman game made with python and pygame.
@@ -12,7 +12,7 @@ You have to guess the word the hint will be given to you
 You can try untill hangman is complete
 Once hangman is complete you will lose
 
-# Additional feautres
+# Additional features
 Screen will turn green when you guessed the answer correctly 
 and turn red when you have used all tries to guess the word.<br>
 You will be provided with the hint too.<br>

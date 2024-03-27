@@ -17,20 +17,20 @@ YELLOW = (255, 255, 0)
 btn_font = pygame.font.SysFont("arial", 20)
 guess_font = pygame.font.SysFont("monospace", 24)
 lost_font = pygame.font.SysFont('arial', 45)
-hint_font = pygame.font.SysFont('arial', 30)  # Font for the hint
+hint_font = pygame.font.SysFont('arial', 30)  
 word = ''
 buttons = []
 guessed = []
 hangmanPics = [pygame.image.load('hangman0.png'), pygame.image.load('hangman1.png'), pygame.image.load('hangman2.png'), pygame.image.load('hangman3.png'), pygame.image.load('hangman4.png'), pygame.image.load('hangman5.png'), pygame.image.load('hangman6.png')]
 
 limbs = 0
-hint = ''  # Initialize the hint variable
+hint = ''  
 
 def redraw_game_window():
     global guessed
     global hangmanPics
     global limbs
-    global hint  # Add this line
+    global hint  
     win.fill( WHITE)
     for i in range(len(buttons)):
         if buttons[i][4]:
@@ -51,7 +51,7 @@ def redraw_game_window():
 
     # Display the hint
     hint_label = hint_font.render("Hint: " + hint, 1, BLACK)
-    win.blit(hint_label, (20, 150))  # Adjust the position as needed
+    win.blit(hint_label, (20, 150))  
 
     pygame.display.update()
 
@@ -60,7 +60,7 @@ def randomWord():
     f = file.readlines()
     i = random.randrange(0, len(f) - 1)
 
-    # Split the line into the word and the hint
+    
     word_hint = f[i][:-1].split(',')
     return word_hint[0], word_hint[1]
 
@@ -168,7 +168,7 @@ while inPlay:
                 guessed.append(chr(letter))
                 buttons[letter - 65][4] = False
                 if hang(chr(letter)):
-                    if limbs != 5:
+                    if limbs != 6:
                         limbs += 1
                     else:
                         end()

@@ -22,8 +22,8 @@ and when you have clicked alphabet once it won't be shown to you again until the
 
 
 # Requirements
-- * Python 
-- * random
+- Python 
+- random
 - pygame
 
 

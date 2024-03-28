@@ -4,5 +4,7 @@ asia , continent
 india , country
 apple , fruit
 cow , animal
+mango , fruit
+guitar , instrument
 
 

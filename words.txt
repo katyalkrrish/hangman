@@ -6,5 +6,5 @@ apple , fruit
 cow , animal
 mango , fruit
 guitar , instrument
-
-
+red , colour
+blue , colour

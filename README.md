@@ -9,7 +9,7 @@ A simple hangman game made with python and pygame.
 
 # Instructions
 You have to guess the word the hint will be given to you 
-You can try untill hangman is complete
+You can try untill hangman is completed
 Once hangman is complete you will lose.
 
 # Additional features

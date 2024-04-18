@@ -1,7 +1,7 @@
 Krrish , name of a friend
 Python , programing lang
 asia , continent
-india , country
+indias , country
 apple , fruit
 cow , animal
 mango , fruit
